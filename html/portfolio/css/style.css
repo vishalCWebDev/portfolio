@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,300;0,500;0,900;1,400;1,500&family=Ubuntu:wght@400;500;700&display=swap');
+/* @import './responsive/tablet.css'; */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.container aside {
+  width: 25%;
+  height: 100%;
+  background: rgb(250, 59, 59);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+
+.container aside .imgBox {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.358);
+}
+
+.container aside .imgBox .img {
+  width: 96%;
+  height: 96%;
+  border-radius: 50%;
+  background: url("../img/img.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 1px solid rgba(0, 0, 0, 0.361);
+}
+
+.container aside ul {
+  list-style: none;
+}
+
+.container aside ul li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container aside ul li a {
+  display: inline-block;
+  padding: 5px;
+  color: #ffb700;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.container aside ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: aliceblue;
+  transition: .3s;
+}
+
+.container aside ul li a:hover {
+  color: #f5f4dd;
+}
+
+.container aside ul li a:hover::after {
+  width: 100%;
+}
+
+.container aside ul li:active {
+  color: white;
+}
+
+.container main {
+  width: calc(100% - 25%);
+  height: 100%;
+  overflow: hidden;
+}
+
+.container main .box {
+  width: 100%;
+  height: calc(615px * 6);
+  display: flex;
+  flex-direction: column;
+}
+
+.container main .box #profile {
+  width: 100%;
+  height: 615px;
+}
+
+.container main .box #profile .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px;
+  min-height: 100%;
+}
+
+
+
+.container main .box #profile .content h1 {
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  color: #b48484;
+}
+
+.container main .box #profile .content .content-head {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #646464
+}
+
+.container main .box #profile .content .content-head a {
+  color: yellowgreen;
+}
+
+.content-body p {
+  color: #847e7e;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.3em;
+  word-spacing: .1em;
+}
+
+.container main .box #profile .content .content-icon {
+  display: flex;
+  width: 400px;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container main .box #profile .content .content-icon i {
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  border-radius: 50%;
+  color: white;
+  background-color: rgb(186, 132, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+
+.container main .box #profile .content .content-icon i:hover {
+  background-color: rgb(128, 0, 255);
+}
+
+
+
+#project {
+  width: 100%;
+  height: 615px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+#project .card {
+  width: 250px;
+  height: 220px;
+  background-color: #f28a8a;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(30, 30, 30, 0.263);
+}
+
+#skills {
+  width: 100%;
+  height: 615px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 50px;
+  text-transform: capitalize;
+}
+
+#skills h1:nth-child(1) {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  color: #3f3a3a;
+}
+
+#skills h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #847e7e;
+}
+
+#skills .skills-icon {
+  list-style: none;
+  display: flex;
+}
+
+#skills .skills-icon li {
+  margin-right: 50px;
+}
+
+
+#skills .skills-icon li i {
+  font-size: 2.5em;
+  color: #847e7e;
+  cursor: pointer;
+}
+
+#skills .skills-icon li i:hover {
+  color: #b48203;
+}
+
+.skills-text {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#skills li h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7em;
+  color: #847e7e;
+  margin-bottom: 20px;
+}
+
+.skills-text li {
+  font-family: 'Poppins', sans-serif;
+  color: #847e7e;
+  line-height: 1.6em;
+}
+
+#education {
+  width: 100%;
+  height: 615px;
+  padding: 50px;
+}
+
+#education h1 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  font-size: 4em;
+}
+
+#education .education-content {
+  margin-top: 50px;
+}
+
+#education .education-content h3 {
+  font-family: sans-serif;
+  font-size: 1.7em;
+  color: #262626;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+#education .education-content h4 {
+  color: rgb(132, 132, 132);
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+#education .education-content h6 {
+  color: rgb(97, 96, 96);
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+
+#education .education-content p {
+  margin-bottom: 6em;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #847e7e;
+}
+
+#interests {
+  width: 100%;
+  height: 615px;
+  padding: 50px;
+}
+
+#interests h1 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  color: #5d5c5c;
+  font-size: 4em;
+  margin-bottom: 2em;
+}
+
+#interests p {
+  font-family: 'Poppins', sans-serif;
+  color: #8a8787;
+  font-weight: 500;
+  font-family: 1.3em;
+  text-align: justify;
+}
+
+#hire-me {
+  width: 100%;
+  height: 615px;
+  padding: 50px;
+  background-color: white;
+}
+
+#hire-me h1 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
+  word-spacing: .3em;
+  color: #323030;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 5em auto;
+}
+
+.input-box {
+  position: relative;
+  width: 344px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border: 3px solid rgb(0, 0, 0);
+  outline: none;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.input-box input:nth-child(1){
+  margin-bottom: 3rem;
+}
+
+
+.input-box span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1em;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.input-box input:valid~span,
+.input-box input:focus~span
+{
+  color: rgb(42, 43, 43);
+  transform: translateY(-22px);
+  font-size: .90em;
+  padding: 0 10px;
+  background: white;
+}
+
+button {
+  padding: 10px;
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  outline: none;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: .3s;
+  align-self: flex-end;
+}
+
+button:hover {
+  color: #000;
+  background: inherit;
+}
+
