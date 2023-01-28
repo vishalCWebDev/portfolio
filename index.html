@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
+      integrity="sha512-giQeaPns4lQTBMRpOOHsYnGw1tGVzbAIHUyHRgn7+6FmiEgGGjaG0T2LZJmAPMzRCl+Cug0ItQ2xDZpTmEc+CQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>portfolio</title>
   </head>
   <body>
@@ -20,9 +27,13 @@
         <li><a href="#">reviews</a></li>
         <li><a href="#">blog</a></li>
       </ul>
-      <a href="#" class="content-btn">content me</a>
+      <a href="#content-form-con" class="content-btn">content me</a>
+      <div class="dark-mode">
+        <div class="dark"></div>
+      </div>
     </nav>
     <div class="page">
+      <div class="scroll-top" title="scroll top">^</div>
       <header>
         <div class="leftSide">
           <h1 class="header-titel">
@@ -39,62 +50,141 @@
             >
             <a href="#" class="header-work-btn">my works</a>
           </div>
-
-          <div class="parsonl-short-info">
-            <div class="birth-place">
-              <h4>Born In</h4>
-              <p>bhusawal</p>
-            </div>
-            <div class="experience-box">
-              <h4>Experience</h4>
-              <p>3+ year</p>
-            </div>
-            <div class="birth-date-box">
-              <h4>Date of Birth</h4>
-              <p>30 oct 1996</p>
-            </div>
-          </div>
         </div>
         <div class="rightSide">
           <div class="imgBox"></div>
         </div>
       </header>
-      <section class="project-container">
-        <div class="container">
-          <div class="about-title">
-            <h2>about me</h2>
+      <section class="about-container">
+        <div class="about-text-con">
+          <p>i am web a developer</p>
+          <h1>about me</h1>
+          <p>
+            My name is <strong>Vishal Chaudhari</strong>. I have been studying
+            UI UX Design since October 2022. I like creating a cool design
+            project.<br /><br />
+            Donec imperdiet risus at tortor consequat maximus et eget magna.
+            Cras ornare sagittis augue, id sollicitudin justo tristique ut.
+            Nullam ex enim, euismod vel bibendum ultrices, fringilla vel eros.
+            Donec euismod leo lectus, et euismod metus euismod sed. Quisque quis
+            suscipit ipsum, at pellentesque velit. Duis a congue sem.
+          </p>
+        </div>
+        <div class="skills-container">
+          <h1>skills</h1>
+          <div class="icon">
+            <img src="./assets/img/programming icon/html-icon.png" alt="html" />
+            <span>91%</span>
           </div>
-          <div class="about-page">
-            <div class="items">
-              <h1>project-one</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum placeat in ducimus officia sit praesentium corrupti
-                laudantium molestias quas esse, debitis impedit dolorem eaque
-                rerum fugit facilis neque culpa iste?
-              </p>
-            </div>
-            <div class="items">
-              <h1>project-one</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum placeat in ducimus officia sit praesentium corrupti
-                laudantium molestias quas esse, debitis impedit dolorem eaque
-                rerum fugit facilis neque culpa iste?
-              </p>
-            </div>
-            <div class="items">
-              <h1>project-one</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatum placeat in ducimus officia sit praesentium corrupti
-                laudantium molestias quas esse, debitis impedit dolorem eaque
-                rerum fugit facilis neque culpa iste?
-              </p>
-            </div>
+          <div class="icon">
+            <img
+              src="./assets/img/programming icon/icons8-css3-144.png"
+              alt="css"
+            />
+            <span>61%</span>
+          </div>
+          <div class="icon">
+            <img
+              src="./assets/img/programming icon/icons8-javascript-144.png"
+              alt="javascript"
+            />
+            <span>81%</span>
+          </div>
+          <div class="icon">
+            <img src="./assets/img/programming icon/sass.png" alt="sass" />
+            <span>89%</span>
+          </div>
+          <div class="icon">
+            <img src="./assets/img/programming icon/physics.png" alt="react" />
+            <span>78%</span>
+          </div>
+          <div class="icon">
+            <img src="./assets/img/programming icon/github.png" alt="github" />
+            <span>96%</span>
           </div>
         </div>
       </section>
+      <section class="education-container">
+        <table class="education-container-table">
+          <tr>
+            <th colspan="5">education</th>
+          </tr>
+          <tr>
+            <td>12th pass.</td>
+            <td>2016-17</td>
+            <td>maharashtra board</td>
+          </tr>
+          <tr>
+            <td>iti(fillter)</td>
+            <td>2017-19</td>
+            <td>ncvt</td>
+          </tr>
+          <tr>
+            <td>codeLarn</td>
+            <td>2021-22</td>
+            <td>youtube</td>
+          </tr>
+        </table>
+        <div class="eduction-right-box"></div>
+      </section>
+      <section class="project-wrapper">
+        <h1>my projects</h1>
+        <div class="project-boxes">
+          <div class="projects"></div>
+          <div class="projects"></div>
+          <div class="projects"></div>
+          <div class="projects"></div>
+          <div class="projects"></div>
+          <div class="projects"></div>
+          <div class="projects"></div>
+          <div class="projects"></div>
+        </div>
+      </section>
+      <section class="review-container">
+        <div class="reviews">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+            autem, sint sequi eos officia quis beatae illo libero aut ipsam.
+            Ipsum aliquid qui aut debitis facilis sed quis doloremque at.
+          </p>
+          <h3>vishal chaudhari</h3>
+          <h4>developer</h4>
+        </div>
+        <div class="reviews-avatar"></div>
+      </section>
+      <section id="content-form-con">
+        <div class="content-con">
+          <h1>content me</h1>
+          <ul>
+            <li><h3>phone number</h3></li>
+            <li><a href="tel:+91 000 00 0000">+91 000 00 0000</a></li>
+            <li><h3>email</h3></li>
+            <li><a href="mail:#">demo@gmail.com</a></li>
+            <li><h3>location</h3></li>
+            <li><a href="#">jalgaon, maharashtra, india</a></li>
+          </ul>
+        </div>
+
+        <div class="content-form">
+          <div class="form">
+            <input
+              type="text"
+              id="username"
+              autocomplete="off"
+              placeholder="your full name"
+            />
+            <input
+              type="email"
+              id="username"
+              autocomplete="off"
+              placeholder="email"
+            />
+            <textarea id="usermessage" placeholder="write message"></textarea>
+            <button>send message</button>
+          </div>
+        </div>
+      </section>
+      <footer></footer>
     </div>
     <script src="./js/script.js"></script>
   </body>

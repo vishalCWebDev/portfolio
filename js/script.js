@@ -1,32 +1,40 @@
-const scroll_div = document.querySelectorAll(".items");
-const divScroll = document.querySelector(".container");
-const scroll_con = document.querySelector(".about-page");
-const about_div_scroll = document.querySelector(".about-title");
-const nav = document.querySelector("nav");
+const navbar = document.querySelector('nav');
+const dark_mode = document.querySelector(".dark-mode");
 
 window.addEventListener("scroll", () => {
-  console.log(window.pageYOffset);
-  window.pageYOffset > 100
-   ? nav.classList.add("nav_fixed")
-   : nav.classList.remove("nav_fixed");
+  window.pageYOffset >= 60
+    ? navbar.classList.add("nav_fixed")
+    : navbar.classList.remove("nav_fixed");
 
-  if (window.pageYOffset >= 481) {
-    divScroll.scrollTo(0, 482);
-  } else {
-    divScroll.style.position = "static";
-  }
+     window.pageYOffset >= 60 ? footer() : navbar.classList.remove("nav_fixed");
+     window.pageYOffset >= 150
+       ? document.querySelector(".scroll-top").style.bottom = "10%"
+       : document.querySelector(".scroll-top").style.bottom = "-10%";
+ 
 });
 
-//about_div_scroll;
+window.onload = () => {
+ const imgCon = document.querySelector(".imgBox");
+ imgCon.style.right = "0px";
+}
 
-  about_div_scroll.addEventListener("mousewheel", (e) => {
-    e.preventDefault();
-    scroll_con.scrollTop += e.deltaY;
 
-    if (
-      scroll_con.scrollTop + scroll_con.clientHeight >=
-      scroll_con.scrollHeight
-    ) {
-      window.scrollTo(0, 800);
-    }
-  });
+document.querySelector(".scroll-top").addEventListener('click',e=>{
+  e.preventDefault();
+  window.scrollTo({
+    top:0,
+    behavior:"smooth"
+  })
+});
+
+
+const footer = () => {
+  const getYear = new Date().getFullYear();
+  document.querySelector("footer").innerHTML = `
+  <p>&copy; ${getYear} create by vishal chaudhari</p>
+  `;
+}
+
+const dark_classes = ".dark, .dark-mode, body , .nav_fixed";
+const dark_mode_classes = document.querySelectorAll(dark_classes);
+dark_mode.addEventListener('click',()=>dark_mode_classes.forEach(items=>items.classList.toggle("active")));
